@@ -11,7 +11,7 @@ provider "azurerm" {
 ## terraform-iaac
 ```
 module "aks" {
-    source                                  =   "Alina-2013/aks-1/azure"
+    source                                  =   "Alina-2013/aks-R/azure"
     cluster_name                            =   "example-aks1"
     kubernetes_version                      =   "1.18.4"
     node_pool_name                          =   "node1"
