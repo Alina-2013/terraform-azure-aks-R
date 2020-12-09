@@ -1,0 +1,15 @@
+module "aks" {
+  source                       = "../"
+  cluster_name                 = "example-aks1"
+  kubernetes_version           = "1.18.4"
+  node_pool_name               = "node1"
+  min_count                    = "3"
+  max_count                    = "5"
+  client_id                    = "your-service-principal-client-id"
+  client_secret                = "your-service-principal-client-secret"
+  environment                  = "dev"
+  resource_group_name_location = "West Europe"
+  resource_group_name          = "dev"
+  username                     = "centos"
+  vm_size                      = "Standard_A2_v2"
+}
